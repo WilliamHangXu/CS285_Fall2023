@@ -34,8 +34,8 @@ def sample_trajectory(env, policy, max_path_length, render=False):
             )
 
         # TODO use the most recent ob to decide what to do
-        ob_temp = ob.to(ptu.device)
-        ac = policy.forward(ob_temp)  # HINT: this is a numpy array
+        # ob_temp = ob.to(ptu.device)
+        ac = policy.forward(ob)  # HINT: this is a numpy array
         ac = ac[0]
 
         # TODO: take that action and get reward and next ob

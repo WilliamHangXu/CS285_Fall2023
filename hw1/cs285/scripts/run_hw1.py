@@ -14,7 +14,7 @@ import numpy as np
 import torch
 import sys
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 from cs285.infrastructure import pytorch_util as ptu
 from cs285.infrastructure import utils
